@@ -1,6 +1,9 @@
 function ItemListContainer(props){
     return (
-        <p className="text-4xl text-center p-20">{props.greeting}</p>
+        <div className="bg-white m-10 rounded ">
+             <p className="text-4xl text-center p-20 font-semibold">{props.greeting}</p>
+        </div>
+       
     )
 }
 

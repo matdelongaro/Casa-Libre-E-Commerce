@@ -5,7 +5,7 @@ function App(){
   return(
   <>
     <NavBar/>
-    <ItemListContainer greeting="Bienvenido a mi E-Commerce"/>
+    <ItemListContainer greeting="Bienvenidos a MR WEB"/>
   </>
   )
 }
