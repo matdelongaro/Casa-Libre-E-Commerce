@@ -1,9 +1,29 @@
-function ItemListContainer(props){
+import { useEffect, useState } from "react";
+import getProducts from "./getProducts";
+import ItemList from "./ItemList";
+
+function ItemListContainer(){
+
+    
+
+    const [products, setProducts] = useState([])
+    
+    
+
+    useEffect(() =>{
+        getProducts()
+        .then((res) =>{
+            setProducts(res) 
+        })
+    }, [])
+
+    
+
     return (
-        <div className="bg-white m-10 rounded ">
-             <p className="text-4xl text-center p-20 font-semibold">{props.greeting}</p>
+        <div>
+            <ItemList products = {products}/>
         </div>
-       
+        
     )
 }
 

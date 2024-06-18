@@ -1,0 +1,23 @@
+[
+    {
+        "id" : 1,
+        "title" :  "Landing page",
+        "price" : 89000,
+        "description" : "Creando una landing page podrás generar más impacto visual, brindar más seriedad y aumentar tus ventas a futuro si lo potencias con publicidad en redes sociales o buscadores."
+    
+    },
+    {
+        "id" :2,
+        "title" :  "Diseño Web Profesional",
+        "price" : 150000,
+        "description" : "El diseño web profesional está destinado a todas aquellas personas que deseen obtener un sitio web más detallado para darse a conocer a todo el mundo."
+                       
+    },
+    {
+        "id" :3,
+        "title" :  "Diseño Web Profesional",
+        "price" : 420000,
+        "description" : "Hoy es posible encontrar una solución sin la presencialidad, son cada vez más las personas que se animan a emprender en nuevos rumbos. De qué rumbo hablamos: de la tienda online o también llamado e-commerce."
+    }
+   
+]
