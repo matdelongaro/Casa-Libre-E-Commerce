@@ -1,14 +1,19 @@
+import { Link, NavLink } from "react-router-dom"
 import CartWidget from "./CartWidget"
 
 function NavBar(){
     return (
         <nav className="flex justify-between p-4 text-black bg-yellow-400">
-            <a href="#" className="font-semibold">MR WEB</a>
+            <NavLink to="/" className="font-semibold flex">Casa Libre<img src="../public/img/brand.jpg" alt="Casa Libre" className="w-10 mx-1"/></NavLink>
+            
             <ul className="flex">
-                <li className="px-5"><a href="#">Páginas Webs</a></li>
-                <li className="px-5"><a href="#">Servicios de Email</a></li>
-                <li className="px-5"><a href="#">Sign In</a></li>    
-                <li className="px-5"><a href="#"><CartWidget/></a></li>        
+                <li className="px-5"><NavLink to="/electrodomesticos">Electrodomésticos</NavLink></li>
+                <li className="px-5"><NavLink to="/electrodomesticos/cocina">Cocina</NavLink></li>
+                <li className="px-5"><NavLink to="/electrodomesticos/lavanderia">Lavandería</NavLink></li>
+                <li className="px-5"><NavLink to="/electrodomesticos/limpieza">Limpieza</NavLink></li>
+                <li className="px-5"><NavLink to="/electrodomesticos/climatizacion">Climatización</NavLink></li>
+                <li className="px-5"><NavLink to="/signin">Sign In</NavLink></li>    
+                <li className="px-5"><NavLink to="/carrito"><CartWidget/></NavLink></li>        
                    
             </ul>
         </nav>

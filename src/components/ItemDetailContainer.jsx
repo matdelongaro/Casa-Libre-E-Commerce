@@ -1,17 +1,20 @@
 import { useEffect, useState } from "react"
 import { filterProduct } from "./getProducts"
 import ItemDetail from "./ItemDetail"
+import { useParams } from "react-router-dom"
 
-function ItemDetailContainer({itemId}){
+function ItemDetailContainer(){
 
     const [item , setItem] = useState(null)
+    const id = useParams().id;
+
 
     useEffect(() => {
-        filterProduct(itemId)
+        filterProduct(Number(id))
         .then((res) => {
             setItem(res)
         })
-    }, [itemId])
+    }, [id])
 
     return(
         <div>

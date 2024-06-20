@@ -1,13 +1,13 @@
-import Item from "./Item"
+import ItemCount from "./ItemCount"
 
 function ItemList ({products}){
     return(
-            <div className="m-10 bg-white rounded ">
+            <div className="grid grid-cols-4 gap-4">
                 {products.length > 0 && 
                 products.map((product)=>{
                     return(
 
-                        <Item key={product.id} product = {product}/> 
+                        <ItemCount key={product.id} product = {product}/> 
                     )
                 })
                 
