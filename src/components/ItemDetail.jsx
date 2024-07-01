@@ -3,18 +3,20 @@ import ItemCount from "./ItemCount"
 
 function ItemDetail({item}){
     return(
-            <div className="max-w-md rounded shadow-lg mx-auto py-3">
+            <div className="max-w-md py-3 m-10 mx-auto bg-white rounded shadow-lg ma">
                         <div className="w-full h-64">
                         <img src={item.image} alt={item.title} className="object-cover w-64 mx-auto"/>
                         </div>  
-                        <div className="px-6 py-4 h-32">
-                            <p className="text-gray-700 text-base">{item.description}</p>
+                        <div className="h-32 px-6 py-4">
+                            <p className="text-base text-gray-700">{item.description}</p>
                         </div>
-                        <h2 className="uppercase font-bold text-xl mb-2">{item.title}</h2>
-                        <h4>{item.category}</h4>
-                        <div className="px-6 py-4 flex items-center justify-between">
-                        <p className="font-bold text-xl text-gray-900">$ {item.price}</p> 
-                        <Link to={`/item/${item.id}`} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded uppercase"> Agregar al Carrito</Link>
+                        <div className="h-20 px-6">   
+                            <h2 className="mb-2 text-xl font-bold uppercase">{item.title}</h2>
+                            <h4 className="text-gray-500">{item.category}</h4>
+                        </div>
+                        <div className="flex items-center justify-between px-6 py-4">
+                        <p className="text-xl font-bold text-gray-900">$ {item.price}</p> 
+                        <Link to={`/item/${item.id}`} className="px-4 py-2 font-bold text-white uppercase bg-blue-500 rounded hover:bg-blue-700"> Agregar al Carrito</Link>
                         </div>
                         <ItemCount />
                     </div>

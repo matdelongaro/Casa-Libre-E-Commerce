@@ -4,7 +4,7 @@ import CartWidget from "./CartWidget"
 function NavBar(){
     return (
         <nav className="flex justify-between p-4 text-black bg-yellow-400">
-            <NavLink to="/" className="font-semibold flex">Casa Libre<img src="../public/img/brand.jpg" alt="Casa Libre" className="w-10 mx-1"/></NavLink>
+            <NavLink to="/" className="flex font-semibold">Casa Libre<img src="../public/img/brand.jpg" alt="Casa Libre" className="w-10 mx-1"/></NavLink>
             
             <ul className="flex">
                 <li className="px-5"><NavLink to="/electrodomesticos">Electrodomésticos</NavLink></li>
