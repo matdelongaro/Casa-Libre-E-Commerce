@@ -6,21 +6,28 @@ import NavBar from  "./src/components/NavBar.jsx"
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Footer from "./src/components/Footer.jsx";
 import Regulation from "./src/components/Regulation.jsx";
+import { CartProvider } from "./src/context/CartContext.jsx";
+import Carrito from "./src/components/Carrito.jsx";
+import "./src/index.scss"
 
 function App(){
   return(
-    <BrowserRouter>
-      <NavBar />
-      <Routes>
-        <Route path="/" element={<ItemListContainer/> }/>
-        <Route path="/item/:id" element={<ItemDetailContainer/>}/>
-        <Route path="/electrodomesticos" element={<ItemListContainer/> }/>
-        <Route path="/electrodomesticos/:category" element={<ItemListContainer/> }/>
-        <Route path="/signin" element={<SignIn />}/>
-      </Routes>
-      <Regulation />
-      <Footer />
-    </BrowserRouter>
+  <CartProvider>
+      <BrowserRouter>
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<ItemListContainer/> }/>
+          <Route path="/item/:id" element={<ItemDetailContainer/>}/>
+          <Route path="/electrodomesticos" element={<ItemListContainer/> }/>
+          <Route path="/electrodomesticos/:category" element={<ItemListContainer/> }/>
+          <Route path="/signin" element={<SignIn />}/>
+          <Route path="/carrito" element={<Carrito/>} />
+        </Routes>
+        <Regulation />
+        <Footer />
+      </BrowserRouter>
+    </CartProvider>
+    
   )
 }
 

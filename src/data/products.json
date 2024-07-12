@@ -4,96 +4,108 @@
         "title": "Refrigerador Samsung",
         "price": 800.00,
         "category": "cocina",
-        "image": "../public/img/products/refrigerador.png" ,
-        "description": "Refrigerador Samsung de 500 litros, con tecnología No Frost y eficiencia energética A++."
+        "image": "../img/products/refrigerador.png" ,
+        "description": "Refrigerador Samsung de 500 litros, con tecnología No Frost y eficiencia energética A++." ,
+        "stock" : "5"
     },
     {
         "id": 2,
         "title": "Lavadora LG",
         "price": 600.00,
         "category": "lavanderia",
-        "image": "../public/img/products/lavadora.png" ,
-        "description": "Lavadora LG de 8 kg, con tecnología Inverter y múltiples programas de lavado."
+        "image": "../img/products/lavadora.png" ,
+        "description": "Lavadora LG de 8 kg, con tecnología Inverter y múltiples programas de lavado.",
+        "stock" : "5"
     },
     {
         "id": 3,
         "title": "Microondas Panasonic",
         "price": 150.00,
         "category": "cocina",
-        "image": "../public/img/products/microondas.png" ,
-        "description": "Microondas Panasonic de 20 litros, con grill y 5 niveles de potencia."
+        "image": "../img/products/microondas.png" ,
+        "description": "Microondas Panasonic de 20 litros, con grill y 5 niveles de potencia.",
+        "stock" : "5"
     },
     {
         "id": 4,
         "title": "Aspiradora Dyson",
         "price": 400.00,
         "category": "limpieza",
-        "image": "../public/img/products/aspiradora.png" ,
-        "description": "Aspiradora Dyson sin bolsa, con tecnología ciclónica y filtro HEPA."
+        "image": "../img/products/aspiradora.png" ,
+        "description": "Aspiradora Dyson sin bolsa, con tecnología ciclónica y filtro HEPA.",
+        "stock" : "5"
     },
     {
         "id": 5,
         "title": "Lavavajillas Bosch",
         "price": 700.00,
         "category": "cocina",
-        "image": "../public/img/products/lavavajillas.png" ,
-        "description": "Lavavajillas Bosch de 12 servicios, con programa eco y secado extra."
+        "image": "../img/products/lavavajillas.png" ,
+        "description": "Lavavajillas Bosch de 12 servicios, con programa eco y secado extra.",
+        "stock" : "5"
     },
     {
         "id": 6,
         "title": "Horno Eléctrico Teka",
         "price": 350.00,
         "category": "cocina",
-        "image": "../public/img/products/horno.png" ,
-        "description": "Horno eléctrico Teka multifunción, con temporizador y función de autolimpieza."
+        "image": "../img/products/horno.png" ,
+        "description": "Horno eléctrico Teka multifunción, con temporizador y función de autolimpieza.",
+        "stock" : "5"
     },
     {
         "id": 7,
         "title": "Cafetera Nespresso",
         "price": 120.00,
         "category": "cocina",
-        "image": "../public/img/products/cafetera.png" ,
-        "description": "Cafetera Nespresso de cápsulas, con sistema de calentamiento rápido y depósito de agua de 0.7 litros."
+        "image": "../img/products/cafetera.png" ,
+        "description": "Cafetera Nespresso de cápsulas, con sistema de calentamiento rápido y depósito de agua de 0.7 litros.",
+        "stock" : "5"
     },
     {
         "id": 8,
         "title": "Secadora Whirlpool",
         "price": 500.00,
         "category": "lavanderia",
-        "image": "../public/img/products/secadora.png" ,
-        "description": "Secadora Whirlpool de 7 kg, con tecnología de sensor automático de secado."
+        "image": "../img/products/secadora.png" ,
+        "description": "Secadora Whirlpool de 7 kg, con tecnología de sensor automático de secado.",
+        "stock" : "5"
     },
     {
         "id": 9,
         "title": "Batidora Oster",
         "price": 80.00,
         "category": "cocina",
-        "image": "../public/img/products/batidora.png" ,
-        "description": "Batidora Oster de 10 velocidades, con jarra de vidrio resistente y cuchillas de acero inoxidable."
+        "image": "../img/products/batidora.png" ,
+        "description": "Batidora Oster de 10 velocidades, con jarra de vidrio resistente y cuchillas de acero inoxidable.",
+        "stock" : "5"
     },
     {
         "id": 10,
         "title": "Aire Acondicionado Daikin",
         "price": 1200.00,
         "category": "climatizacion",
-        "image": "../public/img/products/aire.png" ,
-        "description": "Aire acondicionado Daikin split, con tecnología inverter y control remoto."
+        "image": "../img/products/aire.png" ,
+        "description": "Aire acondicionado Daikin split, con tecnología inverter y control remoto.",
+        "stock" : "5"
     },
     {
         "id": 11,
         "title": "Plancha de Ropa Philips",
         "price": 50.00,
         "category": "lavanderia",
-        "image": "../public/img/products/plancha.png" ,
-        "description": "Plancha de ropa Philips con suela de cerámica y función de vapor vertical."
+        "image": "../img/products/plancha.png" ,
+        "description": "Plancha de ropa Philips con suela de cerámica y función de vapor vertical.",
+        "stock" : "5"
     },
     {
         "id": 12,
         "title": "Extractor de Jugos",
         "price": 100.00,
         "category": "Cocina",
-        "image": "../public/img/products/juguera.png" ,
-        "description": "Extractor de jugos Hamilton Beach con motor potente y dos velocidades."
+        "image": "../img/products/juguera.png" ,
+        "description": "Extractor de jugos Hamilton Beach con motor potente y dos velocidades.",
+        "stock" : "5"
     }
    
 ]

@@ -2,7 +2,7 @@ function Footer(){
     return(
         <div className="p-4 bg-white">
             <div className="container px-4 mx-auto">
-                <ul className="flex justify-center pb-2">
+                <ul className="flex justify-center pb-2 ">
                     <li className="px-3">Trabajá con nosotros</li>
                     <li  className="px-3">Términos y condiciones</li>
                     <li  className="px-3">Accesibilidad</li>
