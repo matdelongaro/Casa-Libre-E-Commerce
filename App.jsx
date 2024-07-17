@@ -9,6 +9,7 @@ import Regulation from "./src/components/Regulation.jsx";
 import { CartProvider } from "./src/context/CartContext.jsx";
 import Carrito from "./src/components/Carrito.jsx";
 import "./src/index.scss"
+import Checkout from "./src/components/Checkout.jsx";
 
 function App(){
   return(
@@ -22,6 +23,7 @@ function App(){
           <Route path="/electrodomesticos/:category" element={<ItemListContainer/> }/>
           <Route path="/signin" element={<SignIn />}/>
           <Route path="/carrito" element={<Carrito/>} />
+          <Route path="/checkout" element={<Checkout/>} />
         </Routes>
         <Regulation />
         <Footer />
