@@ -11,7 +11,7 @@ function Carrito(){
     }
     return(
         <div>
-            <h1>Carrito</h1>
+            
             {
                 carrito.map((prod) => (
                     <div key={prod.id}>
@@ -34,7 +34,13 @@ function Carrito(){
                     <p>Precio total: $ {precioTotal()}</p>
                     <button onClick={handleVaciar}>Vaciar Carrito</button>
                     <Link to="/checkout">Finalizar compra</Link>
-                </div> : <p>El Carrito está vacío</p>}
+                </div> : 
+                <div className="flex flex-col max-w-md m-12 mx-auto justify-center min-h-full " >
+                    <img className="w-64 mx-auto" src="../img/carrito.png" alt="shopping-cart"/>
+                    <p className="text-center px-4 py-2 my-6 font-bold ">El Carrito está vacío :(</p> 
+                    <button><Link to="/" className="px-4 py-2 w-10 font-bold text-white uppercase bg-blue-950 rounded hover:bg-blue-900">Continuar comprando</Link></button>
+                </div>
+                }
 
                 
         </div>

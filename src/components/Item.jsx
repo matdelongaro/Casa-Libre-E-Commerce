@@ -17,7 +17,7 @@ function Item({product}){
                         
                         <div className="flex items-center justify-between px-6 py-4">
                         <p className="text-xl font-bold text-gray-900">$ {product.price}</p> 
-                        <Link to={`/item/${product.id}`} className="px-4 py-2 font-bold text-white uppercase bg-blue-500 rounded hover:bg-blue-700"> Ver más</Link>
+                        <Link to={`/item/${product.id}`} className="px-4 py-2 font-bold text-white uppercase bg-blue-950 rounded hover:bg-blue-900"> Ver más</Link>
                         </div>
                         
                     </div>

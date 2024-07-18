@@ -32,8 +32,9 @@ function Checkout() {
     if(compraId){
         return(
             <div>
-                <p>Muchas gracias por tu compra</p>
-                <p>Tu numero de compra es : {compraId}</p>
+                <p>¡Tu compra se realizó con éxito!</p>
+                <p>Tu código es: {compraId}</p>
+                <p>Muestraselo al repartidor al momento de la entrega.</p>
             </div>
         )
     }

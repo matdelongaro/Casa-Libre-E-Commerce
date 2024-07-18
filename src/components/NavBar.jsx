@@ -9,7 +9,7 @@ function NavBar(){
     const [isOpen, setIsOpen] = useState(false)
     return (
         <nav>
-            <NavLink to="/" className="nav_logo"  onClick={() => { setIsOpen(false);}}>Casa Libre<img src="../public/img/brand.jpg" alt="Casa Libre" className="w-10 mx-1"/></NavLink>
+            <NavLink to="/" className="nav_logo"  onClick={() => { setIsOpen(false);}}>Casa Libre</NavLink>
             <ul className={`nav_items ${isOpen && "open"}`}>
                 <li  onClick={() => { setIsOpen(false);}}><NavLink to="/electrodomesticos">Electrodomésticos</NavLink></li>
                 <li  onClick={() => { setIsOpen(false);}}><NavLink to="/electrodomesticos/cocina">Cocina</NavLink></li>
