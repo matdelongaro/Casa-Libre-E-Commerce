@@ -25,9 +25,15 @@ export const CartProvider = ({children}) =>{
   const numeroCarrito = () =>{
     return carrito.reduce((acc, prod) => acc + prod.cantidad, 0)
   }
-
+  
   const precioTotal = () =>{
     return carrito.reduce((acc, prod) => acc + prod.cantidad * prod.price, 0)
+  }
+  const envio = () =>{
+    return carrito.reduce((acc, prod) => acc + (prod.cantidad * prod.price) *0.1, 0)
+  }
+  const totalCompra = () => {
+    return carrito.reduce((acc, prod) => acc + (prod.cantidad * prod.price) + (prod.cantidad * prod.price)*0.1  , 0)
   }
 
   const vaciarCarrito = () =>{
@@ -35,12 +41,14 @@ export const CartProvider = ({children}) =>{
 
     
   }
+
+  
   useEffect(() => {
     localStorage.setItem("carrito", JSON.stringify(carrito))
   }, [carrito])
 
   return (
-  <CartContext.Provider value={{carrito , addToCart , numeroCarrito, precioTotal, vaciarCarrito}}>
+  <CartContext.Provider value={{carrito , addToCart , numeroCarrito, precioTotal, vaciarCarrito, envio, totalCompra}}>
     {children}
   </CartContext.Provider>
   )

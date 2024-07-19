@@ -4,27 +4,38 @@ import { Link } from "react-router-dom"
 
 function Carrito(){
     
-    const {carrito, precioTotal , vaciarCarrito} = useContext(CartContext)
+    const {carrito, precioTotal , vaciarCarrito, envio, totalCompra } = useContext(CartContext)
 
     const handleVaciar = () =>{
         vaciarCarrito()
     }
+    
+    
+
+    
     return(
-        <div className="border-solid border-2 border-blue-950 max-w-md m-12 mx-auto justify-center min-h-full rounded">
-            <h1 className="text-left text-xl font-bold p-4">Detalle de la compra</h1>
+        <div className="justify-center max-w-md min-h-full m-12 mx-auto border-2 border-solid rounded border-blue-950 ">
+            <h1 className="p-4 text-xl font-bold text-left bg-gray-200 ">Detalle de la compra</h1>
             {
                 carrito.map((prod) => (
-                    <div key={prod.id} className="flex flex-col max-w-md m-3 mx-auto justify-center min-h-full ">
+                    <div key={prod.id} className="flex flex-col justify-center max-w-md min-h-full m-3 mx-auto ">
+                           
+                            <div className="px-3 ">
+                                <h2 className="text-xl">{prod.title}</h2>
+                                <div>
+                                    <div className="flex justify-between"><p className="min-w-40">Precio por unidad:</p><p> $ {prod.price}</p></div>
+                                    <div className="flex justify-between"><p className="min-w-40">Unidades:</p> <p>{prod.cantidad}</p> </div> 
+                                    <div className="flex justify-between"><p className="min-w-40">Precio total :</p> <p>${prod.price * prod.cantidad}</p></div>
+                                    
+                                </div>
+                            </div>
                         
-                        <div className="p-3">
-                            <h2>{prod.title}</h2>
-                            <p>Precio por unidad: $ {prod.price}</p>
-                            <p>Precio total : ${prod.price * prod.cantidad}</p>
-                            <p>cant: {prod.cantidad}</p>
-                            <button onClick={handleVaciar} className="text-center px-4 py-2 my-6 font-bold">Vaciar Carrito</button>
-                        </div>
+                        
+                        
+                        
 
                     </div>
+                    
                     
                    
 
@@ -33,21 +44,28 @@ function Carrito(){
             }
 
                 { carrito.length > 0 ? 
-                <div className="flex flex-col max-w-md m-3 mx-auto justify-center ">
-                    <div className="p-3 ">
-                        <p>Total del carrito</p>
-                        <p>Subtotal: $ {precioTotal()}</p>
-                        <input type="text" placeholder="Introduzca cupón de descuento"/>
-                        <p>Envío : $ </p>
+                <div className="flex flex-col justify-center max-w-md m-3 mx-auto ">
+                    <button onClick={handleVaciar} className="px-4 py-2 font-bold text-center">Vaciar Carrito</button>
+                    <div className="p-4 my-4 font-semibold text-left bg-gray-200">
+                        <div className="my-2">
+                            <div className="flex justify-between"><p>Subtotal: $ </p><p>$  {precioTotal()}</p></div>
+                            <div className="flex justify-between"><p>Costo de envío :</p> <p>$  {envio ()}</p></div>
+                            <div className="flex justify-between"><p>Total de la compra</p> <p>$ {totalCompra()}</p></div>
+                        </div>
+                        
+                        
+                       
                     </div>
+                    <button><Link to="/checkout" className="px-4 py-2 font-bold text-white uppercase rounded bg-blue-950 hover:bg-blue-900">Finalizar compra</Link></button>
                     
                     
-                    <button><Link to="/checkout" className="px-4 py-2 font-bold text-white uppercase bg-blue-950 rounded hover:bg-blue-900">Finalizar compra</Link></button>
+                    
+                    
                 </div> : 
-                <div className="flex flex-col max-w-md m-12 mx-auto justify-center min-h-full " >
+                <div className="flex flex-col justify-center max-w-md min-h-full m-12 mx-auto " >
                     <img className="w-64 mx-auto" src="../img/carrito.png" alt="shopping-cart"/>
-                    <p className="text-center px-4 py-2 my-6 font-bold ">El Carrito está vacío :(</p> 
-                    <button><Link to="/" className="px-4 py-2 w-10 font-bold text-white uppercase bg-blue-950 rounded hover:bg-blue-900">Continuar comprando</Link></button>
+                    <p className="px-4 py-2 my-6 font-bold text-center ">El Carrito está vacío :(</p> 
+                    <button><Link to="/" className="w-10 px-4 py-2 font-bold text-white uppercase rounded bg-blue-950 hover:bg-blue-900">Continuar comprando</Link></button>
                 </div>
                 }
 
