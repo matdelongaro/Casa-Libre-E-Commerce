@@ -32,7 +32,10 @@ export const CartProvider = ({children}) =>{
       }else{
           setCarrito([...carrito, itemAdd])
       }
+
+
     }
+    
 
   const numeroCarrito = () =>{
     return carrito.reduce((acc, prod) => acc + prod.cantidad, 0)

@@ -60,7 +60,6 @@ function Carrito(){
                     
                     
                     
-                    
                 </div> : 
                 <div className="flex flex-col justify-center max-w-md min-h-full m-12 mx-auto " >
                     <img className="w-64 mx-auto" src="../img/carrito.png" alt="shopping-cart"/>
