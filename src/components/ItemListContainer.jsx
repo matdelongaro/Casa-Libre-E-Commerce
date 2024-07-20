@@ -46,7 +46,7 @@ function ItemListContainer(){
                             <div className="px-16 w-80 py-2">
                                 <p className="font-bold text-blue-950">Del 15 al 24 de Julio</p>
                                 <div className="text-3xl font-bold text-blue-950">
-                                    <p>OFERTAS </p>
+                                    <p>OFERTAS DE</p>
                                     <p>VACACIONES</p>
                                 </div>
                                 <p className="font-semibold text-blue-950">Hasta el 24/07/24</p>
