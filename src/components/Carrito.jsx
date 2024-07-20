@@ -4,14 +4,13 @@ import { Link } from "react-router-dom"
 
 function Carrito(){
     
-    const {carrito, precioTotal , vaciarCarrito, envio, totalCompra } = useContext(CartContext)
+    const {carrito, precioTotal , vaciarCarrito, envio, totalCompra, eliminarProducto, producto } = useContext(CartContext)
 
     const handleVaciar = () =>{
         vaciarCarrito()
     }
     
-    
-
+   
     
     return(
         <div className="justify-center max-w-md min-h-full m-12 mx-auto border-2 border-solid rounded border-blue-950 ">
@@ -52,6 +51,7 @@ function Carrito(){
                             <div className="flex justify-between"><p>Costo de envío :</p> <p>$  {envio ()}</p></div>
                             <div className="flex justify-between"><p>Total de la compra</p> <p>$ {totalCompra()}</p></div>
                         </div>
+                        
                         
                         
                        

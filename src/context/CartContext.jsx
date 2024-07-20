@@ -1,4 +1,6 @@
 import { createContext, useEffect, useState } from "react";
+import Swal from "sweetalert2";
+
 
 export const CartContext = createContext();
 
@@ -13,6 +15,16 @@ export const CartProvider = ({children}) =>{
   
       const carritoDos = [...carrito];
       const productoExistente = carritoDos.find((producto) => producto.id === itemAdd.id);
+      Swal.fire({
+        position: "top-end",
+        icon: "success",
+        title: "Producto Agregado Al Carrito",
+        showConfirmButton: false,
+        timer: 1500
+      });
+      
+      
+    
   
       if(productoExistente){
           productoExistente.cantidad = productoExistente.cantidad + cantidad;
@@ -38,9 +50,17 @@ export const CartProvider = ({children}) =>{
 
   const vaciarCarrito = () =>{
     setCarrito([])
+    Swal.fire({
+      position: "top-end",
+      icon: "success",
+      title: "Se eliminaron los productos del carrito",
+      showConfirmButton: false,
+      timer: 1500
+    });
 
     
   }
+  
 
   
   useEffect(() => {

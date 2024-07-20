@@ -51,9 +51,9 @@ function Checkout() {
         <div className="flex flex-col max-w-md min-h-full m-12 mx-auto border-2 border-solid rounded border-blue-950">
             <h1 className="p-4 text-xl font-bold text-left bg-gray-200 ">Detalle de tu compra</h1>
             <form onSubmit={handleSubmit(pagar)} className="flex flex-col gap-1 p-3 my-4" >
-                <input className="p-2 border-2 border-gray-300 border-solid focus:ring-1 focus:ring-inset focus:ring-blue-950" type="text" placeholder="Ingresa tu nombre" {...register("nombre")}/>
-                <input className="p-2 border-2 border-gray-300 border-solid" type="email" placeholder="Ingresa tu email" {...register("email")} />
-                <input className="p-2 border-2 border-gray-300 border-solid" type="phone" placeholder="Ingresa tu telefono" {...register("phone")}/>
+                <input className="p-2 border-2 border-gray-300 border-solid focus:ring-1 focus:ring-inset focus:ring-blue-950" type="text" placeholder="Ingresa tu nombre" {...register("nombre")} required/>
+                <input className="p-2 border-2 border-gray-300 border-solid" type="email" placeholder="Ingresa tu email" {...register("email")} required/>
+                <input className="p-2 border-2 border-gray-300 border-solid" type="phone" placeholder="Ingresa tu telefono" {...register("phone")} required/>
                 <button type="submit" className="px-4 py-2 m-4 font-bold text-white uppercase rounded bg-blue-950 hover:bg-blue-900">Pagar</button>
             </form>
             
