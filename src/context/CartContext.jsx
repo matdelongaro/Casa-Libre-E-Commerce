@@ -45,7 +45,7 @@ export const CartProvider = ({children}) =>{
     return carrito.reduce((acc, prod) => acc + prod.cantidad * prod.price, 0)
   }
   const envio = () =>{
-    return carrito.reduce((acc, prod) => acc + (prod.cantidad * prod.price) *0.1, 0)
+    return carrito.reduce((acc, prod) => acc + (prod.cantidad * prod.price).toFixed(2) *0.1, 0)
   }
   const totalCompra = () => {
     return carrito.reduce((acc, prod) => acc + (prod.cantidad * prod.price) + (prod.cantidad * prod.price)*0.1  , 0)

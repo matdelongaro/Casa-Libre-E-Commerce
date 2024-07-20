@@ -44,7 +44,7 @@ function ItemListContainer(){
                     <div className="grid h-64 bg-gradient-to-b from-blue-400 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 p-4 ">
                         <div className="flex flex-col justify-evenly items-center">
                             <div className="px-16 w-80 py-2">
-                                <p className="font-bold text-blue-950">Del 15 al 24 de Julio</p>
+                                
                                 <div className="text-3xl font-bold text-blue-950">
                                     <p>OFERTAS DE</p>
                                     <p>VACACIONES</p>
