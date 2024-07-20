@@ -1,11 +1,14 @@
+
 import data from "../data/products.json" ;
+
 
 
 const getProducts = () =>{
     return new Promise((resolve, reject) => {
         setTimeout(() =>{
             resolve(data)
-        }, 1000)
+        }, 3000
+    )
         
     })
 }

@@ -35,7 +35,7 @@ export const CartProvider = ({children}) =>{
 
 
     }
-    
+  
 
   const numeroCarrito = () =>{
     return carrito.reduce((acc, prod) => acc + prod.cantidad, 0)

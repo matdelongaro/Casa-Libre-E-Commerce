@@ -10,8 +10,35 @@ import { CartProvider } from "./src/context/CartContext.jsx";
 import Carrito from "./src/components/Carrito.jsx";
 import "./src/index.scss"
 import Checkout from "./src/components/Checkout.jsx";
+import Swal from "sweetalert2";
+
+
+const loading = () =>{
+      let timerInterval;
+    Swal.fire({
+      title: "Cargando productos",
+      timer: 1000,
+      timerProgressBar: true,
+      didOpen: () => {
+        Swal.showLoading();
+        const timer = Swal.getPopup().querySelector("b");
+        timerInterval = setInterval(() => {
+          timer.textContent = `${Swal.getTimerLeft()}`;
+        }, 200);
+      },
+      willClose: () => {
+        clearInterval(timerInterval);
+      }
+    }).then((result) => {
+      /* Read more about handling dismissals below */
+      if (result.dismiss === Swal.DismissReason.timer) {
+        console.log("I was closed by the timer");
+      }
+    });
+}
 
 function App(){
+  loading()
   return(
   <CartProvider>
       <BrowserRouter>

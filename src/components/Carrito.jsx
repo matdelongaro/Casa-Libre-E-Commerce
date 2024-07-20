@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 
 function Carrito(){
     
-    const {carrito, precioTotal , vaciarCarrito, envio, totalCompra, eliminarProducto, producto } = useContext(CartContext)
+    const {carrito, precioTotal , vaciarCarrito, envio, totalCompra } = useContext(CartContext)
 
     const handleVaciar = () =>{
         vaciarCarrito()
