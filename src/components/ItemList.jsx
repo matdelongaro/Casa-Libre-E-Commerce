@@ -2,7 +2,7 @@ import Item from "./Item"
 
 function ItemList ({productos}){
     return(
-            <div className="grid gap-6 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
+            <div className="grid gap-6 bg-white xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
                 {productos.length > 0 && 
                 productos.map((product)=>{
                     return(

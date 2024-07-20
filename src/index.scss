@@ -44,7 +44,7 @@ nav{
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
     .nav_items{
         position: absolute;
         top:60px;
@@ -84,5 +84,6 @@ nav{
     .nav_toggle.open > span:nth-child(3){
         transform: rotate(-45deg) translate(-5px, 1px);
     }
+    
 }
 }
