@@ -10,7 +10,7 @@ function SignIn(){
                 alt="Your Company"
               />
               <h2 className="mt-10 text-2xl font-bold leading-9 tracking-tight text-center text-gray-900">
-                Registrarse
+                Ingresa a tu cuenta
               </h2>
             </div>
     
@@ -60,7 +60,7 @@ function SignIn(){
                     type="submit"
                     className="flex w-full justify-center rounded-md bg-blue-950 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-blue-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                   >
-                    Sign in
+                    Registrarse
                   </button>
                 </div>
               </form>
